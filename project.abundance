@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "M3 Bolt",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "3fb38b59-25e5-4811-993e-6d5d2476f7f2",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
