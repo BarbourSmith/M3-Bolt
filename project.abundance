@@ -1,83 +1,91 @@
 {
   "atomType": "Molecule",
-  "name": "M3 Bolt",
   "x": 0,
   "y": 0,
   "uniqueID": "3fb38b59-25e5-4811-993e-6d5d2476f7f2",
+  "name": "M3 Bolt",
   "ioValues": [
     {
       "name": "Length",
       "ioValue": 10
+    },
+    {
+      "name": "Keep_Out_Length",
+      "ioValue": 20
     }
   ],
   "topLevel": true,
   "allAtoms": [
     {
       "atomType": "Output",
-      "name": "Output",
       "x": 0.98,
       "y": 0.5,
       "uniqueID": "796a0a0f-9808-4ed2-a4ca-789249c221bf",
-      "ioValues": []
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "Input",
-      "name": "Length",
-      "x": 0.029699999999999997,
-      "y": 0.20334261838440112,
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
       "uniqueID": "bf84a131-2bd8-4d00-85fa-d1f89ee06714",
-      "ioValues": [],
+      "name": "Length",
       "type": "number"
     },
     {
       "atomType": "Circle",
-      "name": "Circle",
-      "x": 0.1779100529100529,
-      "y": 0.6211699164345404,
+      "x": 0.17328042328042328,
+      "y": 0.5,
       "uniqueID": "3a3b3c48-59a6-4109-9db0-b14569915ce0",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 6,
-          "currentEquation": "6"
+          "ioValue": 6
         }
       ]
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.3134920634920635,
-      "y": 0.6072423398328691,
+      "x": 0.30952380952380953,
+      "y": 0.44166666666666665,
       "uniqueID": "f0d0c8a6-6771-4a93-ab92-1b45b823bda7",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "height",
-          "ioValue": 2.2,
-          "currentEquation": "2.2"
+          "ioValue": 2.2
         }
       ]
     },
     {
       "atomType": "Circle",
-      "name": "Circle",
-      "x": 0.1474867724867725,
-      "y": 0.9108635097493036,
+      "x": 0.12367724867724868,
+      "y": 0.7694444444444444,
       "uniqueID": "ffeae411-6b90-4884-a4bc-a97286d5323f",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 3.5,
-          "currentEquation": "3.5"
+          "ioValue": 3.5
         }
       ]
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.28174603174603174,
-      "y": 0.8523676880222841,
+      "x": 0.26256613756613756,
+      "y": 0.7388888888888889,
       "uniqueID": "c213a0c5-ae96-46ea-93a2-a74253f3dba3",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
         {
           "name": "height",
           "ioValue": -10
@@ -86,10 +94,10 @@
     },
     {
       "atomType": "Equation",
-      "name": "Equation",
       "x": 0.06481481481481481,
       "y": 0.6518105849582172,
       "uniqueID": "16633784-2fe1-49f6-9093-83b2c4c13def",
+      "name": "-1*L",
       "ioValues": [
         {
           "name": "L",
@@ -100,7 +108,6 @@
     },
     {
       "atomType": "Fusion",
-      "name": "Fusion",
       "x": 0.4384920634920635,
       "y": 0.584958217270195,
       "uniqueID": "823ee4ab-bfb5-4b58-801b-64a8f320d961",
@@ -108,7 +115,7 @@
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "extrude-a6810378464e265aeb4929a8f39fd25753b04e375900f26426642551a7df47bf",
+            "geometry": "extrude-circle-1.75-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--10",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -135,7 +142,7 @@
         {
           "name": "Shape 2",
           "ioValue": {
-            "geometry": "extrude-2467aaba4637dc5707b2f56b81c971e89ad88c6b449d4943be07d916f6263643",
+            "geometry": "extrude-circle-3-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2.2",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -164,123 +171,76 @@
     },
     {
       "atomType": "Circle",
-      "name": "Circle",
-      "x": 0.3855820105820106,
-      "y": 0.8328690807799443,
+      "x": 0.39616402116402116,
+      "y": 0.7111111111111111,
       "uniqueID": "a20b077d-98e1-4056-94bb-d6de8462cd7e",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 6.5,
-          "currentEquation": "6.5"
+          "ioValue": 6.5
         }
       ]
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.48558201058201056,
-      "y": 0.8328690807799443,
+      "x": 0.4788359788359788,
+      "y": 0.8805555555555555,
       "uniqueID": "f203aba3-cdec-4e95-9c42-9200e1f32821",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "height",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         }
       ]
     },
     {
       "atomType": "Color",
-      "name": "Color",
-      "x": 0.5720899470899471,
-      "y": 0.8523676880222841,
+      "x": 0.5793650793650793,
+      "y": 0.8194444444444444,
       "uniqueID": "e1ac4d1a-b01c-43df-b48a-6d754948c88e",
-      "ioValues": [],
-      "selectedColorIndex": 23
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Keep Out"
     },
     {
       "atomType": "Assembly",
-      "name": "Assembly",
       "x": 0.6792328042328042,
       "y": 0.532033426183844,
       "uniqueID": "f1df0f05-7334-4745-8e26-530a979911e3",
       "ioValues": [
         {
           "name": "Shape 1",
-          "ioValue": {
-            "geometry": "extrude-32516e706636b3455d8b6d2c0c0fa079d583076e5d09af031f68b165b87aaf7d",
-            "dimension": "3D",
-            "tags": [
-              "keepout"
-            ],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#D9544D",
-            "bom": []
-          }
+          "ioValue": null
         },
         {
           "name": "Shape 2",
-          "ioValue": {
-            "geometry": "fuse-4bd4ddbf7bfa696056a1b85541f3250da84326838c26180c7ddb8bf78296fdb6",
-            "tags": [],
-            "bom": [
-              {
-                "BOMitemName": "",
-                "numberNeeded": 1,
-                "costUSD": 0.1,
-                "source": "https://www.mcmaster.com/products/screws/thread-size~m3/rounded-head-screws-2~/"
-              }
-            ],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "dimension": "3D"
-          }
+          "ioValue": null
         }
       ]
     },
     {
       "atomType": "Add-BOM-Tag",
-      "name": "Add BOM Tag",
       "x": 0.5588624338624338,
       "y": 0.20612813370473537,
       "uniqueID": "01797c49-a31d-47ee-bf01-38a889b3b542",
+      "name": "Add BOM Tag",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "Item Name",
-          "ioValue": "10mm M3 Bolt"
+          "ioValue": "10mm M3 Bolt",
+          "currentEquation": "New Item"
         },
         {
           "name": "Number Needed",
@@ -296,18 +256,18 @@
         }
       ],
       "BOMitem": {
-        "BOMitemName": "",
+        "BOMitemName": "10mm M3 Bolt",
         "numberNeeded": 1,
-        "costUSD": 0.1,
-        "source": "https://www.mcmaster.com/products/screws/thread-size~m3/rounded-head-screws-2~/"
+        "costUSD": 0,
+        "source": ""
       }
     },
     {
       "atomType": "Equation",
-      "name": "Equation",
       "x": 0.2612433862433862,
       "y": 0.28969359331476324,
       "uniqueID": "539b621c-db50-4dcd-9e20-85362ca0dc09",
+      "name": "L + \"mm M3 Bolt\"",
       "ioValues": [
         {
           "name": "L",
@@ -315,96 +275,93 @@
         }
       ],
       "currentEquation": "L + \"mm M3 Bolt\""
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.9055555555555556,
+      "uniqueID": "id-41",
+      "name": "Keep_Out_Length"
     }
   ],
   "allConnectors": [
     {
-      "ap1Name": "number or geometry",
       "ap2Name": "L",
       "ap1ID": "bf84a131-2bd8-4d00-85fa-d1f89ee06714",
       "ap2ID": "16633784-2fe1-49f6-9093-83b2c4c13def"
     },
     {
-      "ap1Name": "number or geometry",
       "ap2Name": "L",
       "ap1ID": "bf84a131-2bd8-4d00-85fa-d1f89ee06714",
       "ap2ID": "539b621c-db50-4dcd-9e20-85362ca0dc09"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "3a3b3c48-59a6-4109-9db0-b14569915ce0",
       "ap2ID": "f0d0c8a6-6771-4a93-ab92-1b45b823bda7"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "Shape 2",
       "ap1ID": "f0d0c8a6-6771-4a93-ab92-1b45b823bda7",
       "ap2ID": "823ee4ab-bfb5-4b58-801b-64a8f320d961"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "ffeae411-6b90-4884-a4bc-a97286d5323f",
       "ap2ID": "c213a0c5-ae96-46ea-93a2-a74253f3dba3"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "Shape 1",
       "ap1ID": "c213a0c5-ae96-46ea-93a2-a74253f3dba3",
       "ap2ID": "823ee4ab-bfb5-4b58-801b-64a8f320d961"
     },
     {
-      "ap1Name": "result",
       "ap2Name": "height",
       "ap1ID": "16633784-2fe1-49f6-9093-83b2c4c13def",
       "ap2ID": "c213a0c5-ae96-46ea-93a2-a74253f3dba3"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "823ee4ab-bfb5-4b58-801b-64a8f320d961",
       "ap2ID": "01797c49-a31d-47ee-bf01-38a889b3b542"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "a20b077d-98e1-4056-94bb-d6de8462cd7e",
       "ap2ID": "f203aba3-cdec-4e95-9c42-9200e1f32821"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "f203aba3-cdec-4e95-9c42-9200e1f32821",
       "ap2ID": "e1ac4d1a-b01c-43df-b48a-6d754948c88e"
     },
     {
-      "ap1Name": "color",
       "ap2Name": "Shape 1",
       "ap1ID": "e1ac4d1a-b01c-43df-b48a-6d754948c88e",
       "ap2ID": "f1df0f05-7334-4745-8e26-530a979911e3"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "number or geometry",
       "ap1ID": "f1df0f05-7334-4745-8e26-530a979911e3",
       "ap2ID": "796a0a0f-9808-4ed2-a4ca-789249c221bf"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "Shape 2",
       "ap1ID": "01797c49-a31d-47ee-bf01-38a889b3b542",
       "ap2ID": "f1df0f05-7334-4745-8e26-530a979911e3"
     },
     {
-      "ap1Name": "result",
       "ap2Name": "Item Name",
       "ap1ID": "539b621c-db50-4dcd-9e20-85362ca0dc09",
       "ap2ID": "01797c49-a31d-47ee-bf01-38a889b3b542"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-41",
+      "ap2ID": "f203aba3-cdec-4e95-9c42-9200e1f32821"
     }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": [],
   "filetypeVersion": 1
 }
