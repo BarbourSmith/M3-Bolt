@@ -4,6 +4,12 @@
 
 ![](/project.svg)
 
+## Inputs
+
+- **Length** (number)
+- **Keep_Out_Length** (number)
+
+
 
 
  

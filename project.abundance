@@ -94,8 +94,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.06481481481481481,
-      "y": 0.6518105849582172,
+      "x": 0.07671957671957672,
+      "y": 0.5543175487465182,
       "uniqueID": "16633784-2fe1-49f6-9093-83b2c4c13def",
       "name": "-1*L",
       "ioValues": [
@@ -108,8 +108,8 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.4384920634920635,
-      "y": 0.584958217270195,
+      "x": 0.42394179894179895,
+      "y": 0.5431754874651811,
       "uniqueID": "823ee4ab-bfb5-4b58-801b-64a8f320d961",
       "ioValues": [
         {
@@ -212,8 +212,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6792328042328042,
-      "y": 0.532033426183844,
+      "x": 0.8015873015873016,
+      "y": 0.5013927576601671,
       "uniqueID": "f1df0f05-7334-4745-8e26-530a979911e3",
       "ioValues": [
         {
@@ -279,9 +279,22 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.9055555555555556,
+      "y": 0.9387186629526462,
       "uniqueID": "id-41",
       "name": "Keep_Out_Length"
+    },
+    {
+      "atomType": "Color",
+      "x": 0.5218253968253969,
+      "y": 0.5292479108635098,
+      "uniqueID": "id-84",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Sand"
     }
   ],
   "allConnectors": [
@@ -323,7 +336,7 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "823ee4ab-bfb5-4b58-801b-64a8f320d961",
-      "ap2ID": "01797c49-a31d-47ee-bf01-38a889b3b542"
+      "ap2ID": "id-84"
     },
     {
       "ap2Name": "geometry",
@@ -359,6 +372,11 @@
       "ap2Name": "height",
       "ap1ID": "id-41",
       "ap2ID": "f203aba3-cdec-4e95-9c42-9200e1f32821"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-84",
+      "ap2ID": "01797c49-a31d-47ee-bf01-38a889b3b542"
     }
   ],
   "unitsKey": "MM",
