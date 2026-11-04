@@ -12,5 +12,18 @@
 
 
 
- 
+ An M3 bolt to place in Abundance designs, with the clearance it needs in the part it goes through.
+
+**How it sits:** the underside of the head is at Z = 0. The 6 mm round head (2.2 mm tall) is above that, and the 3.5 mm shank runs down into -Z. Move and Rotate it so Z = 0 lands on the surface the head seats against, with the shank pointing into the part.
+
+**Inputs**
+
+- **Length** (mm, default 10): shank length under the head. The bill of materials item is named from it, such as "10mm M3 Bolt".
+- **Keep_Out_Length** (mm, default 20): how far the 6.5 mm Keep Out cylinder reaches up from the head's seat. It cuts a counterbore and room for the driver in the part the head sits in.
+
+**Cutting its holes:** put the bolt in an Assembly with makeDisjoint on, connected after the part it passes through. The shank cuts a 3.5 mm clearance hole and the Keep Out cylinder cuts the 6.5 mm counterbore. Keep Out geometry is left out of fusions, cut layouts, and gcode, and Extract Tag's "Not Keep Out" option removes it. With makeDisjoint off, the bolt shows without cutting anything.
+
+**Bill of materials:** it carries its own Add-BOM-Tag, so don't add another. Each placed copy counts once.
+
+
 
